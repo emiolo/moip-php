@@ -659,7 +659,8 @@ class Moip {
         else
             $this->setError('Error: Maximum amount can not be greater than 12.');
 
-        $parcela->addChild('Recebimento', 'AVista');
+        //$parcela->addChild('Recebimento', 'AVista');
+        $parcela->addChild('Recebimento', 'Parcelado');
 
         if ($transfer === false) {
             if (isset($rate)) {
